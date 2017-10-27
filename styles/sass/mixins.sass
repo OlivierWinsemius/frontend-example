@@ -1,0 +1,28 @@
+=element($name)
+    &__#{$name}
+        @content
+
+=modifier($name)
+    &--#{$name}
+        @content
+
+=hover()
+    &:hover
+        @content
+
+=active()
+    &:active
+        @content
+
+        
+=disabled()
+    &:disabled
+        @content
+
+=before()
+    &::before
+        @content
+
+=after()
+    &::after
+        @content

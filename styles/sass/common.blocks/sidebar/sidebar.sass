@@ -1,0 +1,10 @@
+@import "sidebar-list/sidebar-list"
+
+.sidebar
+    +make-col-ready()
+    @media (max-width: 32em)
+        +make-col(4)
+    @media (min-width: 32.1em)
+        +make-col(2)
+    border-right: 1px solid #CCC
+    margin-bottom: 50px

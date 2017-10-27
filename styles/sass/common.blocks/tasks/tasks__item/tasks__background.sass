@@ -1,0 +1,17 @@
+$backgroundRadius: 300px
+
+.tasks__background
+    background-color: #A7CA52
+    position: absolute
+    width: 0
+    height: 0
+    margin: 0
+    opacity: 0
+    border-radius: $backgroundRadius
+    transition: margin 500ms ease-out, height 500ms ease-out, width 500ms ease-out, opacity 500ms ease-out
+    
+    +modifier("completed")
+        opacity: 1
+        width: $backgroundRadius * 2
+        height: $backgroundRadius * 2
+        margin: -$backgroundRadius

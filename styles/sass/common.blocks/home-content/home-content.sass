@@ -1,0 +1,9 @@
+@import "home-content-block/home-content-block"
+
+.home-content
+    margin-bottom: 40px
+    +make-col-ready()
+    @media (max-width: 32em)
+        +make-col(8)
+    @media (min-width: 32.1em)
+        +make-col(10)

@@ -1,0 +1,26 @@
+@import 'mixins'
+@import "../../modules/bootstrap/scss/bootstrap.scss"
+@import 'common.blocks/tasks/tasks'
+@import "common.blocks/header/header"
+@import "common.blocks/sections/sections"
+@import "common.blocks/sidebar/sidebar"
+@import "common.blocks/home-content/home-content"
+@import "common.blocks/parallax/parallax"
+@import "common.blocks/footer/footer"
+
+html, body
+    margin: 0
+    padding: 0
+    
+button
+    cursor: pointer
+
+html
+    min-height: 100%
+    min-width: 320px
+    position: relative
+
+.body
+    +modifier("dark")
+        background: #181818
+        

@@ -1,0 +1,30 @@
+.sidebar-list-item
+    width: 100%
+    margin-bottom: 20px
+    box-sizing: border-box
+    display: block
+    padding: 10px 0 10px 10px
+    text-decoration: none
+    color: #181818
+    cursor: pointer
+
+    +hover()
+        background: rgba(0,0,0,0.1)
+        color: #000
+        text-decoration: none
+    
+    +before
+        position: absolute
+        z-index: -1
+        content: ""
+        height: 0
+        width: 0
+        right: -16px
+        margin-top: -30px
+        border-left: 2px solid #000
+        transition: height 200ms ease-out
+        box-sizing: initial
+
+    +modifier("active")
+        +before
+            height: 65px

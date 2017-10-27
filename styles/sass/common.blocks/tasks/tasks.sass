@@ -1,0 +1,19 @@
+$itemHeight: 40px
+@import 'tasks__item/tasks__item'
+
+.tasks
+    width: 100%
+    max-width: 300px
+    margin: 0 auto 80px auto
+    padding: 10px
+    border: 1px dashed #c2c2c2
+    text-align: center
+
+    +element("title")
+        font-family: sans-serif
+    
+    +element("list")
+        width: 100%
+        padding: 0
+        margin: 0
+        list-style: none
